@@ -63,8 +63,7 @@ Severe weather, like rain, fog, or snow, causes **10% of crashes over 10 years**
 
 ## 🎮 Simulations
 APT includes a **real-time hazard simulation** to:
-- Test how well the system responds to different types of accidents.
-- Improve its accuracy and effectiveness over time.
+![carcrash_simulation](https://github.com/user-attachments/assets/3b140131-4ab6-4459-a4f3-d21b1da36fd5)
 
 ---
 
