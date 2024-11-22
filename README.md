@@ -10,7 +10,7 @@
 
 Road dangers, like bad weather and careless driving, put lives at risk every day. These dangers don’t just harm individuals—they also cause traffic jams and other problems for society.
 
-**APT** is an **Advanced Traffic Prevention System** that aims to:
+**APT** is an **Advanced Prevention Traffic System** that aims to:
 - Keep nearby vehicles safe from potential hazards.
 - Help authorities respond quickly and effectively to accidents.
 - Reduce additional damage by using real-time information.
@@ -34,12 +34,12 @@ Severe weather, like rain, fog, or snow, causes **10% of crashes over 10 years**
 ## 🛠️ Project Description
 
 ### 📊 System Architecture
-![APT_architecture](https://github.com/user-attachments/assets/a85ab296-1135-487f-8e65-ee53d13a284b)
+![img_architecture](https://github.com/user-attachments/assets/cbb8215a-aea0-4aab-a769-1eb45e296342)
 
-### ✨ Key Features
+### ✨ Key Application(Velocitas)
 
 #### 🚗 Vehicle-to-Vehicle Communication
-- Sends real-time data, like crash details, speed, and weather conditions.
+- Sends real-time data, like crash details, speed, and weather conditions using **mosquitto MQTT**.
 - Uses this information to alert nearby cars about potential risks.
 
 #### 👨‍✈️ Driver Notifications
@@ -54,23 +54,27 @@ Severe weather, like rain, fog, or snow, causes **10% of crashes over 10 years**
   1. Suggests turning on fog lights for better visibility.  
   2. Advises drivers to slow down and drive carefully.  
   3. Displays traffic rules, like "No Overtaking."
+---
 
-#### 🚔 Tools for Authorities
-- Collects data from vehicles to find dangerous areas and their causes.
+## 🚔 WebApplication for Authorities
+![img_web](https://github.com/user-attachments/assets/42a1e2df-d38f-4afa-b1e1-ecec047e0468)
+
+- Collects data from vehicles via **eclipse mosquitto**  to find dangerous areas and get an optimized route to the accident areas.
 - Gives clear information, like the best routes, to help emergency teams respond faster.
 
 ---
 
-## 🎮 Simulations
-APT includes a **real-time hazard simulation** to:
+## 🎮 Simulations via **eclipse SUMO**  
 ![carcrash_simulation](https://github.com/user-attachments/assets/3b140131-4ab6-4459-a4f3-d21b1da36fd5)
-
+- Using SUMO, we visualized the entire flow of the APT system applied in the real world.
+- Assume a specific situation : Hit & Run
+    - Red Car: Offender / Green Car: Victim / Blue Car: Police
+1. Red and green vehicles collide at an intersection
+2. Collision message(event) sent
+3. Police car (blue) receives message and creates optimal route
+4. Police car (blue) tracks the fleeing vehicle(red) in real time.
 ---
 
-## 🚀 Future Plans 
-
-
----
 
 ## 🧑‍💻 Team Members
 - Soonwoong Kim
