@@ -5,7 +5,6 @@
 </p>
 
 ---
----
 ## 💪 Challenge : sunken-kitchen
 ---
 ## 🌟 Project Overview
